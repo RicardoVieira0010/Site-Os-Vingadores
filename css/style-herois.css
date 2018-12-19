@@ -1,0 +1,89 @@
+/*====== RESET ======*//*====== RESET ======*//*====== RESET ======*//*====== RESET ======*/
+* {margin: 0; padding: 0; font-size: 100%; border:none; outline:none; font-weight: 300; box-sizing: border-box; 
+font-family: 'Lato', sans-serif;}
+body {background: linear-gradient(to bottom,#000, #13233f);}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+
+/*===== CABECALHO =====*//*===== CABECALHO =====*//*===== CABECALHO =====*/
+#cabecalho-herois {width: 100%; height: 200px; padding: 2% 3%; background-image: url(../imgs/slide-topo-herois.jpg); background-size: 100%; background-repeat: no-repeat; background-color: #000;
+background-attachment: fixed;}
+#cabecalho-herois img {width: 56px; height: 56px;} 
+.btn-menu {width: 56px; height: 56px; float: right; text-align: center; color: #fff; border-radius: 56px; cursor: pointer;
+background: linear-gradient(to right,#000, #13233f);}
+
+
+/*===== MENU =====*//*===== MENU =====*//*===== MENU =====*/
+.menu { display: none; width: 100%; height: 40%; position: fixed; background-color: rgba(0,0,0,0.9); top:0; left: 0;}
+.btn-close {font-size: 3em; color: #fff; float: right; cursor: pointer;margin-right: 5%;}
+.menu ul {width: 100%; float: left; text-align: center;}
+.menu li {padding: 1.5%; border-bottom: 4px solid #13233f;}
+.menu li a {font-size: 1.5em; color: #fff; padding: 1.5% 3%; text-transform: uppercase; font-weight: bold;}
+
+
+/*=====  HEROIS DA MARVEL  =====*//*=====  HEROIS DA MARVEL  =====*//*=====  HEROIS DA MARVEL  =====*/
+.titulo-herois { background-color: #E90505; text-align: center; margin: 6% auto; border: 2px solid #fff;}
+.titulo-herois h1 { color: #fff; font-size: 2em; font-weight: bold; text-transform: uppercase;}
+.herois01 { display: flex; flex-direction: column; justify-content: center;}
+.herois01 img { width: 300px; max-width: 100%; height: 230px; margin: 0 auto;}
+.herois01 p { color: #fff; padding: 3%;  }
+
+/*=====  BUTTON  =====*/
+.containner { display: flex; justify-content: center; flex-wrap: nowrap; flex-direction: column;}
+ button {margin: 0 auto; padding: 1% 3%; width: 80%; border-radius: 20px;}
+.herois01 .ferro a, .cap-america a,.hulk a, .thor a, .aranha a, .arqueiro a {font-size: 1.5em; color: #fff; font-weight: bold; text-align: center; margin: 0 auto;}
+.herois01 .ferro i, .cap-america i,.hulk i, .thor i, .aranha i, .arqueiro i {float: right; margin-right: 5%; margin-top: 1%}
+.herois01 .ferro {background: linear-gradient(to right,#E70505, #270105);}
+.herois01 .cap-america {background: linear-gradient(to right,#0E18E3, #040E58);}
+.herois01 .hulk {background: linear-gradient(to right,#0AE50F, #034603);}
+.herois01 .thor {background: linear-gradient(to right,#CEC710, #0C0101);}
+.herois01 .aranha {background: linear-gradient(to right,#F20202, #080101);}
+.herois01 .arqueiro {background: linear-gradient(to right,#07073B, #6E86FB);}
+
+
+/*===== FOOTER =====*//*===== FOOTER =====*//*===== FOOTER =====*//*===== FOOTER =====*/
+footer { background-color: #13233f; width: 100%; padding-top: 3%; margin-top: 10%; display: flex; justify-content: center;}
+footer img {width: 90px; height: 80px; max-width: 100%; max-height: 100%; padding-right: 5%;}
+.menu-footer a {color: #fff; font-size: 1em; text-transform: uppercase; border-bottom: 1px solid #00a2ff;}
+.menu-footer ul li {padding: 0 5px;}
+.menu-footer ul li a:hover { color:  #B9B7B7;}
+.direitos-footer { background-color: #13233f; color: #fff; text-align: center; text-transform: uppercase; font-size: 0.8em; padding-top: 2%;}
+
+
+/*==========  BOBILE FIRST  ==========*/
+ /*==========  SMALL DEVICES - SMARTFPHONES  ==========*/
+ @media screen and (min-width: 480px) {
+ 	button { margin: 3% auto 5% auto; }
+ }
+
+  /*==========  SMALL DEVICES - TABLET  ==========*/
+ @media screen and (min-width: 768px) {
+ 	#cabecalho-herois {height: 350px;}
+ 	#cabecalho-herois img {width: 80px; height: 80px;}
+ 	.titulo-herois {padding: 2%;}
+ 	.titulo-herois h1 {font-size: 2.5em; }
+	.herois01 { justify-content: space-between; flex-direction: row; }
+	.herois01 img { padding: 4%;}
+	.herois01 p {font-size: 1.2em;}
+	button {width: 50%; height: 160px;font-size: 0.8em; padding: 5%;}	
+ }
+
+ /*==========  LARGE DEVICES - WIDE SCREENS  ==========*/
+ @media screen and (min-width: 1218px) {
+ 	#cabecalho-herois {height: 450px;}
+ 	#cabecalho-herois img {width: 100px; height: 100px;}
+ 	.titulo-herois h1 {font-size: 3em;}
+ 	.containner { flex-wrap: wrap; flex-direction: row; justify-content: space-between;}
+ 	.herois01 img { width: 350px; height: 340px; }
+ 	button {width: 40%; height: 120px; padding: 3%; align-self: center; max-width: 100%; max-height: 100%;}
+ 	button a i { text-align: center; padding: 0; margin-top: 0;}
+	.btn-menu {display: none;}
+	.btn-close {display: none;}
+	.menu {width: 20%; height: 56px; line-height: 30px; float: right;
+	display: block; !inportant; position: static; background-color: rgba(0,0,0,0.0);}
+	.menu li { padding-left: 0; float: left; border:none;}
+	.menu li a {color: #fff; font-size: 1em; padding: 5px;}
+	.menu li a:hover { color: #B9B7B7;}
+ }
